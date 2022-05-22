@@ -35,7 +35,14 @@ html {
         <v-list-item
           class="text-white text-start"
           value="0"
+          title="Index"
+          to="/"
+        ></v-list-item>
+        <v-list-item
+          class="text-white text-start"
+          value="0"
           title="First"
+          to="/first"
         ></v-list-item>
       </v-list>
     </v-navigation-drawer>

@@ -4,7 +4,7 @@
   <v-row>
     <v-col cols="12">
       <p data-testid="counter-values">
-        INDEX: Counter: {{ counter.n }}. Double: {{ counter.double }}
+        FIRST : Counter: {{ counter.n }}. Double: {{ counter.double }}
       </p>
       <v-btn
         @click="counter.increment()"

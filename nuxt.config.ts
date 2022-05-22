@@ -2,15 +2,20 @@ import { defineNuxtConfig } from 'nuxt'
 
 // https://v3.nuxtjs.org/api/configuration/nuxt.config
 export default defineNuxtConfig({
-    srcDir: "sources",
-    css: ['vuetify/lib/styles/main.sass'],
-    build: {
-        transpile: ["vuetify"]
+  srcDir: 'sources',
+  css: ['vuetify/lib/styles/main.sass'],
+  build: {
+    transpile: ['vuetify'],
+  },
+  vite: {
+    define: {
+      'process.env.DEBUG': 'false',
     },
-    vite: {
-      define: {
-        'process.env.DEBUG': 'false',
-      },
-    },
-    ssr: false,
+  },
+  ssr: false,
+
+  buildModules: [
+    // pinia plugin
+    '@pinia/nuxt',
+  ],
 })

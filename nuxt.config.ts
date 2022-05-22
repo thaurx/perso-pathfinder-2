@@ -14,8 +14,9 @@ export default defineNuxtConfig({
   },
   ssr: false,
 
-  buildModules: [
-    // pinia plugin
-    '@pinia/nuxt',
-  ],
+  buildModules: ['@pinia/nuxt', '@nuxtjs/pwa'],
+
+  pwa: {
+    icon: false,
+  },
 })

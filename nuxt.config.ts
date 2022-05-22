@@ -8,9 +8,7 @@ export default defineNuxtConfig({
     transpile: ['vuetify'],
   },
   vite: {
-    define: {
-      'process.env.DEBUG': 'false',
-    },
+    define: { 'process.env.DEBUG': 'false' },
   },
   ssr: false,
 
